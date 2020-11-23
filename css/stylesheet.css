@@ -36,13 +36,26 @@
 
 /*	Created by Kristine Luangkhot on November 22, 2020 */
 /* Inspiration for top section of wab page taken from https://levine.princeton.edu/ */
+
+/******
+Edit: adjust .main-header to add parallax effect
+Owner: Andrea Reid
+Date: Nov 23, 2020
+Source: https://www.w3schools.com/howto/howto_css_parallax.asp
+******/
 .main-header {
 	background-image: url("../images/satellite-placeholder.jpg");
-	height: 761px;
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+/* End Edit by Owner: Andrea Reid */
+
 .header-overlay {
-	background-color: #0000004d;
-	height: 761px;
+	color: white;
+	height: 500px;
 }
 /*Horizontal navigation bar placed at the top of the page */
 /* Instructions to create a horizontal navigation bar taken from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
@@ -112,12 +125,13 @@
 
 .blurb-text {
 	width: 500px;
-	margin-top: 75px;
-	margin-left: 100px;
+	margin-top: 20px;
+	margin-left: 50px;
 	font-family:"Verdana", Arial, sans-serif;
 	color: white;
 	font-size: 14pt;
 }
+
 .header-div {
 	margin-top: 100px;
 }
@@ -125,7 +139,7 @@
 .header-text {
 	width: 500px;
 	margin-top: 0px;
-	margin-left: 100px;
+	margin-left: 50px;
 	font-family:"Verdana", Arial, sans-serif;
 	color: white;
 	font-size: 30pt;
@@ -142,3 +156,93 @@
 	color: white;
 	font-size: 12pt;
 }
+
+/***********
+Owner: Andrea Reid
+Date: Nov 23, 2020
+From: 
+***********/
+
+/* Apply formatting to Body*/
+
+body {
+	font-family:"Verdana", Arial, sans-serif;
+}	
+
+/* make header and navbar continuous with sections */
+
+.outer-margin {
+	padding: 0px;
+}
+
+/* position image overlay text*/
+
+.position-text {
+	position: absolute;
+	left: 10px;
+	top: 250px;
+}
+
+/* apply style to sections in page playout */
+.section-style {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section-style-mission {
+	margin-left: 15%;
+	margin-right: 15%;
+	font-family:"Verdana", Arial, sans-serif;
+	width: 70%;
+	padding: 30px;
+}
+
+.section-style-team {
+	padding-left: 20px;
+}
+
+/* align text to left of first column */
+.txt-align {
+	text-align: center;
+}
+
+/* Align image to the right for Desktop */
+.img-align {
+	padding: 10px;
+}
+
+/* Align top margin of text in first column to top of image in second column */
+.top-align {
+	margin-top: 0px;
+}
+
+.div-height {
+	height: 567px;
+}
+
+/* Adjust formatting for phone view */
+/* Center image */
+@media screen and (max-width: 768px) {
+	.img-align {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.txt-align {
+		text-align: left;
+	}
+	.section-style-mission {
+		margin-left: auto;
+		margin-right: auto;
+		font-family:"Verdana", Arial, sans-serif;
+		padding: 10px;
+		width: 100%;
+	}
+	.txt-width-mission {
+		padding: 10px;
+		width: 100%;
+	}
+}
+
+/* End Owner: Andrea Reid */
