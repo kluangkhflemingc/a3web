@@ -2,20 +2,32 @@
 <html>
 <head>
 <link rel="stylesheet" href="css/stylesheet.css">
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="js/ourscript.js"></script>
 </head>
 <body>
     <header class="col-12">
-        <h1>Our Name</h1>
-        <ul>
-            <li>Home</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Contact Us</li>
-        </ul>
+    <!-- Created by Kristine Luangkhot on November 22, 2020 -->
+    <div class="main-header">
+    <div class ="header-overlay">
+        <div class="navbar" id="myTopnav">
+            <a class="active" href = "index.html">Home</a></li>
+            <a href = "projects.html">Projects</a></li>
+            <a href = "services.html">Services</a></li>
+            <a href = "history.html">Our History</a></li>
+            <a href = "contact.html">Contact Us</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="navBarMin()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>
+        <h1 class="header-text">GIS Consultants</h1>
+        <p class="blurb-text">We do GIS things do you don't have to. From databases to cartographic products, we cover the entire project life cycle for you.</p>
+    </div>
+    </div>
     </header>
     <section>
-        <h3>Mission Statement</h3>
+        <h2>Mission Statement</h2>
     </section>
     <section>
         <div class="col-6">
@@ -42,7 +54,9 @@
         </div>
     </section>
     <footer class="col-12">
-        <p>(c) Our Name, Fleming College, 2020</p>
+        <div class="footer-style">
+        <p class="footer-text">(c) Our Name, Fleming College, 2020</p>
+        </div>
     </footer>
 </body>
 </html>
