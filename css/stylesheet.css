@@ -35,7 +35,7 @@
 }
 
 /*	Created by Kristine Luangkhot on November 22, 2020 */
-/* Inspiration for navigation bar and top section of wab page taken from https://levine.princeton.edu/ */
+/* Inspiration for top section of wab page taken from https://levine.princeton.edu/ */
 .main-header {
 	background-image: url("../images/satellite-placeholder.jpg");
 	height: 761px;
@@ -44,8 +44,8 @@
 	background-color: #0000004d;
 	height: 761px;
 }
-/*Horizontal navigation bar placed near the top of the page */
-/* Instructions to create a horizontal navigation bar taken from https://www.w3schools.com/css/css_navbar_horizontal.asp */
+/*Horizontal navigation bar placed at the top of the page */
+/* Instructions to create a horizontal navigation bar taken from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 .navbar {
 	display: block;
   list-style-type: none;
@@ -58,8 +58,7 @@
   background-color: #543005;
 }
 
-/* Change font and text colour of the list items to blend into the background image */
-/* Similar to https://levine.princeton.edu/ */
+/* Change font and text colour of the list items to match choseb colour scheme */
 .navbar a {
 	float: left;
   display: block;
@@ -70,7 +69,7 @@
   text-decoration: none;
 }
 
-/* Change the link color to white on hover */
+/* Change the link color to lighter colour on hover */
 .navbar a:hover:not(.active) {
   background-color: #80cdc1;
 }
