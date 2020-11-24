@@ -107,7 +107,7 @@ Source: https://www.w3schools.com/howto/howto_css_parallax.asp
 	}
   }
   
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   @media screen and (max-width: 768px) {
 	.navbar.responsive {position: relative;}
 	.navbar.responsive a.icon {
