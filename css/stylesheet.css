@@ -61,7 +61,6 @@ Source: https://www.w3schools.com/howto/howto_css_parallax.asp
 /* Instructions to create a horizontal navigation bar taken from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 .navbar {
 	display: block;
-  list-style-type: none;
   margin-top: 0em;
   margin-bottom: 0em;
   margin-right: 0px;
