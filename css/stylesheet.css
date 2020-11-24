@@ -1,4 +1,9 @@
-/* Content for grading: Responsive Design */
+/* General design inspiration from https://levine.princeton.edu/ */
+
+/***********
+Owner: Corwan Groux
+Date: November 24, 2020
+***********/
 * {
 	box-sizing: border-box;
 }
@@ -16,47 +21,54 @@
   padding: 10px;
   width: 100%;
 }
+/***********
+End Owner: Corwan Groux
+***********/
 
-/* Taken from https://www.w3schools.com/css/css_rwd_mediaqueries.asp The formatting of classes other than the columns is my own addition. */
-/* Styles for small devices (phones and narrow tablets) */
-@media only screen and (min-width: 768px) {
-	.col-1 {width: 8.33%;}
-	.col-2 {width: 16.66%;}
-	.col-3 {width: 25%;}
-	.col-4 {width: 33.33%;}
-	.col-5 {width: 41.66%;}
-	.col-6 {width: 50%;}
-	.col-7 {width: 58.33%;}
-	.col-8 {width: 66.66%;}
-	.col-9 {width: 75%;}
-	.col-10 {width: 83.33%;}
-	.col-11 {width: 91.66%;}
-	.col-12 {width: 100%;}
-}
-
-/*	Created by Kristine Luangkhot on November 22, 2020 */
-/* Inspiration for top section of wab page taken from https://levine.princeton.edu/ */
-
-/******
-Edit: adjust .main-header to add parallax effect
+/***********
 Owner: Andrea Reid
 Date: Nov 23, 2020
-Source: https://www.w3schools.com/howto/howto_css_parallax.asp
-******/
-.main-header {
-	background-image: url("../images/satellite-placeholder.jpg");
-	min-height: 500px;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-/* End Edit by Owner: Andrea Reid */
+***********/
 
-.header-overlay {
-	color: white;
-	height: 500px;
+body {
+	font-family:"Verdana", Arial, sans-serif;
+	color: rgb(78, 84, 90);
+	margin: 0px;
+}	
+
+/* make header and navbar continuous with sections */
+
+.outer-margin {
+	padding: 0px;
 }
+
+/* apply style to alternating sections in page playout */
+.section-style {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f5f5f5;
+	width: 100%;
+}
+
+.section-style-mission {
+	margin-left: 15%;
+	margin-right: 15%;
+	width: 70%;
+	padding: 30px;
+}
+
+.section-style-team {
+	padding-left: 20px;
+}
+/***********
+End Owner: Andrea Reid
+***********/
+
+/***********
+Owner: Kristine Luangkhot
+Date: November 22, 2020
+***********/
+
 /*Horizontal navigation bar placed at the top of the page */
 /* Instructions to create a horizontal navigation bar taken from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 .navbar {
@@ -95,32 +107,28 @@ Source: https://www.w3schools.com/howto/howto_css_parallax.asp
 .navbar .icon {
 	display: none;
   }
-  
-/* Responsive design: minimize navigation bar and have a hambuger "menu" icon show up at a certain pixel width */
-/* Taken from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
-/* When the screen is less than 768 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 768px) {
-	.navbar a:not(:first-child) {display: none;}
-	.navbar a.icon {
-	  float: right;
-	  display: block;
-	}
-  }
-  
-  /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 768px) {
-	.navbar.responsive {position: relative;}
-	.navbar.responsive a.icon {
-	  position: absolute;
-	  right: 0;
-	  top: 0;
-	}
-	.navbar.responsive a {
-	  float: none;
-	  display: block;
-	  text-align: left;
-	}
-  }
+ /***********
+ End Owner: Kristine Luangkhot
+ ************/
+
+/***********
+Owner: Andrea Reid
+Date: Nov 23, 2020
+***********/
+/* Source: https://www.w3schools.com/howto/howto_css_parallax.asp */
+.main-header {
+	background-image: url("../images/satellite-placeholder.jpg");
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header-overlay {
+	color: white;
+	height: 500px;
+}
 
 .blurb-text {
 	width: 500px;
@@ -157,43 +165,6 @@ Source: https://www.w3schools.com/howto/howto_css_parallax.asp
 	font-size: 12pt;
 }
 
-/***********
-Owner: Andrea Reid
-Date: Nov 23, 2020
-From: style tips taken from w3schools
-***********/
-
-/* Apply formatting to Body*/
-
-body {
-	font-family:"Verdana", Arial, sans-serif;
-	color: rgb(78, 84, 90);
-}	
-
-/* make header and navbar continuous with sections */
-
-.outer-margin {
-	padding: 0px;
-}
-
-/* apply style to sections in page playout */
-.section-style {
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #f5f5f5;
-	width: 100%;
-}
-
-.section-style-mission {
-	margin-left: 15%;
-	margin-right: 15%;
-	width: 70%;
-	padding: 30px;
-}
-
-.section-style-team {
-	padding-left: 20px;
-}
 
 /* align text to center on desktop and to left on phone*/
 .txt-align-resp {
@@ -219,7 +190,70 @@ img.circle {display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
+/***********
+ End Owner: Andrea Reid
+ ************/
 
+/***********
+Owner: Corwan Groux
+Date: November 24, 2020
+***********/
+/* Taken from https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+Styles for small devices (phones and narrow tablets) */
+@media only screen and (min-width: 768px) {
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+}
+/***********
+End Owner: Corwan Groux
+***********/
+/***********
+Owner: Kristine Luangkhot
+Date: November 22, 2020
+***********/
+/* Responsive design: minimize navigation bar and have a hambuger "menu" icon show up at a certain pixel width */
+/* Taken from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+/* When the screen is less than 768 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 768px) {
+	.navbar a:not(:first-child) {display: none;}
+	.navbar a.icon {
+	  float: right;
+	  display: block;
+	}
+  }
+  
+  /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 768px) {
+	.navbar.responsive {position: relative;}
+	.navbar.responsive a.icon {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+	.navbar.responsive a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+  }
+ /***********
+ End Owner: Kristine Luangkhot
+ ************/
+
+ /***********
+Owner: Andrea Reid
+Date: Nov 23, 2020
+***********/
 /* Adjust formatting for phone view */
 /* Center image */
 @media screen and (max-width: 768px) {
@@ -243,5 +277,6 @@ img.circle {display: block;
 		width: 100%;
 	}
 }
-
-/* End Owner: Andrea Reid */
+/***********
+ End Owner: Andrea Reid
+ ************/
