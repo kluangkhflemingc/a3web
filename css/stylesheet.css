@@ -71,7 +71,7 @@ Source: https://www.w3schools.com/howto/howto_css_parallax.asp
   background-color: #543005;
 }
 
-/* Change font and text colour of the list items to match choseb colour scheme */
+/* Change font and text colour of the list items to match chosen colour scheme */
 .navbar a {
 	float: left;
   display: block;
@@ -140,6 +140,7 @@ Source: https://www.w3schools.com/howto/howto_css_parallax.asp
 	width: 500px;
 	margin-top: 0px;
 	margin-left: 50px;
+	padding-top: 150px;
 	font-family:"Verdana", Arial, sans-serif;
 	color: white;
 	font-size: 30pt;
@@ -160,13 +161,14 @@ Source: https://www.w3schools.com/howto/howto_css_parallax.asp
 /***********
 Owner: Andrea Reid
 Date: Nov 23, 2020
-From: 
+From: style tips taken from w3schools
 ***********/
 
 /* Apply formatting to Body*/
 
 body {
 	font-family:"Verdana", Arial, sans-serif;
+	color: rgb(78, 84, 90);
 }	
 
 /* make header and navbar continuous with sections */
@@ -175,25 +177,17 @@ body {
 	padding: 0px;
 }
 
-/* position image overlay text*/
-
-.position-text {
-	position: absolute;
-	left: 10px;
-	top: 250px;
-}
-
 /* apply style to sections in page playout */
 .section-style {
-	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: #f5f5f5;
+	width: 100%;
 }
 
 .section-style-mission {
 	margin-left: 15%;
 	margin-right: 15%;
-	font-family:"Verdana", Arial, sans-serif;
 	width: 70%;
 	padding: 30px;
 }
@@ -202,14 +196,14 @@ body {
 	padding-left: 20px;
 }
 
-/* align text to left of first column */
-.txt-align {
+/* align text to center on desktop and to left on phone*/
+.txt-align-resp {
 	text-align: center;
 }
 
-/* Align image to the right for Desktop */
-.img-align {
-	padding: 10px;
+/* align text to center always */
+.txt-center {
+	text-align: center;
 }
 
 /* Align top margin of text in first column to top of image in second column */
@@ -217,8 +211,14 @@ body {
 	margin-top: 0px;
 }
 
-.div-height {
-	height: 567px;
+/* Format Team photos as circles */
+img.circle {display: block;
+	border-radius: 50%;
+	max-width:100%;
+	margin-top:0px;
+	margin-bottom:30px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Adjust formatting for phone view */
@@ -229,7 +229,7 @@ body {
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.txt-align {
+	.txt-align-resp {
 		text-align: left;
 	}
 	.section-style-mission {
