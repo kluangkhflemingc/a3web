@@ -34,8 +34,11 @@
 	.col-12 {width: 100%;}
 }
 
-/*	Created by Kristine Luangkhot on November 22, 2020 */
-/* Inspiration for top section of wab page taken from https://levine.princeton.edu/ */
+/************************************
+	Owner: Kristine Luangkhot
+	Creation Date: November 22, 2020
+	Inspiration for top section of wab page taken from https://levine.princeton.edu/
+*************************************/
 
 /******
 Edit: adjust .main-header to add parallax effect
@@ -88,7 +91,7 @@ Source: https://www.w3schools.com/howto/howto_css_parallax.asp
 
 /* Create an "active" class and assign it to the current link to indicate to the user which page they are on */
 .navbar a.active {
-	background-color:#01665e;
+	color: white;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
