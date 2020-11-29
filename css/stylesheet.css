@@ -78,24 +78,26 @@ Date: November 22, 2020
   margin-right: 0px;
   margin-left: 0px;
   padding: 0;
-  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: #543005;
 }
 
-/* Change font and text colour of the list items to match chosen colour scheme */
+/* Change font and text colour of the navigation bar items to match chosen colour scheme */
 .navbar a {
 	float: left;
   display: block;
   font-family:"Verdana", Arial, sans-serif;
-  color: white;
+  color: #FFFFFF99;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-/* Change the link color to lighter colour on hover */
-.navbar a:hover:not(.active) {
-  background-color: #80cdc1;
+/* Change the link color to white on hover */
+.navbar a:hover, .dropdown:hover, .dropbutton {
+  color: white;
 }
 
 /* Create an "active" class and assign it to the current link to indicate to the user which page they are on */
@@ -110,6 +112,59 @@ Date: November 22, 2020
  /***********
  End Owner: Kristine Luangkhot
  ************/
+
+ /***********
+Owner: Kristine Luangkhot
+Date: November 28, 2020
+***********/
+
+/* Create a dropdown menu within the main navigation bar */
+/* Instructions taken from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
+
+ .dropdown {
+	float: left;
+	overflow: hidden;
+  }
+
+  .dropdown .dropbutton {
+	font-size: inherit;
+	border: none;
+	outline: none;
+	color: #FFFFFF99;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+  }
+
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #8c510a;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	top: 100%;
+  }
+
+  .dropdown-content a {
+	float: none;
+	color:  #FFFFFF99;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+  .dropdown-content a:hover {
+	color: white;
+  }
+
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+/***********
+End Owner: Kristine Luangkhot
+***********/
 
 /***********
 Owner: Andrea Reid
@@ -225,7 +280,9 @@ Date: November 22, 2020
 /* Taken from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 /* When the screen is less than 768 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 768px) {
-	.navbar a:not(:first-child) {display: none;}
+	.navbar a:not(:first-child), .dropdown {
+		display: none;
+	}
 	.navbar a.icon {
 	  float: right;
 	  display: block;
@@ -245,6 +302,13 @@ Date: November 22, 2020
 	  display: block;
 	  text-align: left;
 	}
+	.navbar.responsive .dropdown {
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+	.navbar.responsive .dropdown-content {position: relative;}
   }
  /***********
  End Owner: Kristine Luangkhot
