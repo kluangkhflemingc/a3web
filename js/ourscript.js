@@ -19,11 +19,18 @@ Owner: Kristine Luangkhot
 Creation Date: November 30, 2020
 ***********/
 
-/* Change image source after 5 seconds */
-setTimeout(function() {
-  document.getElementById("monochrome").setAttribute("src", "images/cartography/kristine-colour-qualitative.jpg");
-}, 5000);
+/* Use the fadeIn and fadeOut methods from jQuery to create a slideshow of images */
+/* Each image that is not shown will be given a class with display: none so it does not show*/
+/* activeimage class will be removed and added to each image as it fades in and out */
+function swapImages(){
+  var $active = $('.photogallery .activeimage');
+  var $next = ($('.photogallery .activeimage').next().length > 0) ? $('.photogallery .activeimage').next() : $('.photogallery img:first');
+  $active.fadeOut(function(){
+  $active.removeClass('activeimage');
+  $next.fadeIn().addClass('activeimage');
+  });
+  }
 
-/**********
+ /**********
  End Owner: Kristine Luangkhot
  **********/
