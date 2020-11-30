@@ -19,10 +19,10 @@ Owner: Kristine Luangkhot
 Creation Date: November 30, 2020
 ***********/
 
-/* Change image source after 10 seconds */
+/* Change image source after 5 seconds */
 setTimeout(function() {
   document.getElementById("monochrome").setAttribute("src", "images/cartography/kristine-colour-qualitative.jpg");
-}, 10000);
+}, 5000);
 
 /**********
  End Owner: Kristine Luangkhot
