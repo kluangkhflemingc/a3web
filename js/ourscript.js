@@ -22,6 +22,7 @@ Creation Date: November 30, 2020
 /* Use the fadeIn and fadeOut methods from jQuery to create a slideshow of images */
 /* Each image that is not shown will be given a class with display: none so it does not show*/
 /* activeimage class will be removed and added to each image as it fades in and out */
+/* Inspiration for slideshow taken from: https://www.ecopiatech.com/ */
 function swapImages(){
   var $active = $('.photogallery .activeimage');
   var $next = ($('.photogallery .activeimage').next().length > 0) ? $('.photogallery .activeimage').next() : $('.photogallery img:first');
