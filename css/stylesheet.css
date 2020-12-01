@@ -79,7 +79,7 @@ Date: November 22, 2020
 }
 
 /* Active page is white and change inactive link color to white on hover */
-.navbar a.active, .navbar a:hover, .dropdown:hover, .dropdown, .dropbutton, .dropdown-content a:hover {
+.navbar a.active, .navbar a:hover, .dropdown:hover .dropbutton, .dropdown-content a:hover {
   color: white;
 }
 
@@ -99,28 +99,13 @@ Date: November 28, 2020
 /* Create a dropdown menu within the main navigation bar */
 /* Instructions taken from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp */
 
- .dropdown {
+  .dropdown {
 	float: left;
 	overflow: hidden;
-  }
-
-  .dropdown .dropbutton {
 	font-size: inherit;
 	border: none;
 	outline: none;
 	color: #FFFFFF99;
-	padding: 14px 16px;
-	background-color: inherit;
-	font-family: inherit;
-	margin: 0;
-  }
-
-  .dropdown .dropbuttonactive {
-	font-size: inherit;
-	border: none;
-	outline: none;
-	color: white;
-	padding: 14px 16px;
 	background-color: inherit;
 	font-family: inherit;
 	margin: 0;
@@ -242,7 +227,7 @@ img.circle {display: block;
 	.blurb-text {
 		width: 60%;
 		margin-top: 20px;
-		margin-left: 50px;auto;
+		margin-left: 50px;
 		margin-right: auto;
 		color: white;
 		font-size: 14pt;
@@ -296,6 +281,7 @@ Styles for small devices (phones and narrow tablets) */
 /***********
 End Owner: Corwan Groux
 ***********/
+
 /***********
 Owner: Kristine Luangkhot
 Date: November 22, 2020
@@ -348,6 +334,7 @@ Date: November 22, 2020
 /* Create a slideshow of images where all images are positioned in the same place */
  .photogallery{
 	position:relative;
+	top: 100px;
 	}
 .photogallery img{
 	display:none;
