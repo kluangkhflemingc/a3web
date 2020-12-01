@@ -7,6 +7,28 @@
 </head>
 <body>
     <!-- Owner: Kristine Luangkhot
+    Creation Date: November 22, 2020-->
+         <header class="col-12 outer-margin">
+            <div class="navbar" id="myTopnav">
+                <a href = "index.html">Home</a>
+                <div class = "dropdown">
+                    <!-- Use the <a> element to open the dropdown menu -->
+                    <a href = "services.html">Services & Projects</a>
+                    <div class = "dropdown-content">
+                        <a class = "active" href="cartography.html">Cartography</a>
+                        <a href="spatialanalysis.html">Spatial Analysis</a>
+                        <a href="remotesensing.html">Remote Sensing</a>
+                        <a href="scripting.html">Tool Scripting</a>
+                    </div>
+                </div>
+                <a href = "careers.html">Careers</a>
+                <a href="javascript:void(0);" class="icon" onclick="navBarMin()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
+    <!-- End Owner: Kristine Luangkhot -->
+    <!-- Owner: Kristine Luangkhot
      Creation Date: November 30, 2020-->
     <!-- Create a slideshow of images where images fade in and fade out after every 8 seconds -->
     <!-- Inspiration for slideshow taken from: https://www.ecopiatech.com/ -->
@@ -15,11 +37,13 @@
             setInterval("swapImages()", 8000);
         });
     </script>
-  <div class="photogallery">
-        <img src="images/cartography/kristine-monochrome.jpg" alt ="Monochrome Map of Chicago" class="activeimage"/>
-        <img src="images/cartography/kristine-colour-qualitative.jpg" alt="Qualitative Map of Chicago in Colour"/>
-        <img src="images/cartography/kristine-colour-quantitative.jpg" alt="Population Density Map of Chicago"/>
-  </div>
+    <section>
+        <div class="photogallery">
+            <img src="images/cartography/kristine-monochrome.jpg" alt ="Monochrome Map of Chicago" class="activeimage"/>
+            <img src="images/cartography/kristine-colour-qualitative.jpg" alt="Qualitative Map of Chicago in Colour"/>
+            <img src="images/cartography/kristine-colour-quantitative.jpg" alt="Population Density Map of Chicago"/>
+        </div>
     <!-- End Owner: Kristine Luangkhot -->
+    </section>
 </body>
 </html>
