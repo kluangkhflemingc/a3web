@@ -42,24 +42,7 @@ body {
 	padding: 0px;
 }
 
-/* apply style to alternating sections in page playout */
-.section-style {
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #f5f5f5;
-	width: 100%;
-}
 
-.section-style-mission {
-	margin-left: 15%;
-	margin-right: 15%;
-	width: 70%;
-	padding: 30px;
-}
-
-.section-style-team {
-	padding-left: 20px;
-}
 /***********
 End Owner: Andrea Reid
 ***********/
@@ -156,8 +139,10 @@ End Owner: Kristine Luangkhot
 /***********
 Owner: Andrea Reid
 Date: Nov 23, 2020
+Source: Parallax effect from https://www.w3schools.com/howto/howto_css_parallax.asp
 ***********/
-/* Source: https://www.w3schools.com/howto/howto_css_parallax.asp */
+/* Apply style to header section with background image and text */
+
 .main-header {
 	background-image: url("../images/satellite-placeholder.jpg");
 	min-height: 500px;
@@ -172,49 +157,41 @@ Date: Nov 23, 2020
 	height: 500px;
 }
 
-.blurb-text {
-	width: 500px;
-	margin-top: 20px;
-	margin-left: 50px;
-	font-family:"Verdana", Arial, sans-serif;
-	color: white;
-	font-size: 14pt;
-}
+@media only screen and (min-width: 768px) {  
 
-.header-div {
-	margin-top: 100px;
-}
-
-.header-text {
+.header-title {
 	width: 500px;
 	margin-top: 0px;
 	margin-left: 50px;
 	padding-top: 150px;
-	font-family:"Verdana", Arial, sans-serif;
 	color: white;
 	font-size: 30pt;
 }
-
-.footer-style {
-	width: 100%;
-	height: 50px;
-	background-color: #543005;
-}
-
-.footer-text {
-	font-family:"Verdana", Arial, sans-serif;
+.blurb-text {
+	width: 500px;
+	margin-top: 20px;
+	margin-left: 50px;
 	color: white;
-	font-size: 12pt;
+	font-size: 14pt;
 }
 
+/* apply style to alternating sections in page playout */
+.section-style-img {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f5f5f5;
+	width: 100%;
+}
 
-/* align text to center on desktop and to left on phone*/
-.txt-align-resp {
+.section-style-mission {
+	margin-left: 16.67%;
+	margin-right: 16.67%;
+	padding: 30px;
 	text-align: center;
 }
 
-/* align text to center always */
-.txt-center {
+.section-style-team {
+	padding-left: 20px;
 	text-align: center;
 }
 
@@ -232,6 +209,51 @@ img.circle {display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
+}
+
+
+/* Adjust formatting for phone view */
+
+@media screen and (max-width: 768px) {
+
+	.header-title {
+		width: 60%;
+		margin-top: 0px;
+		margin-left: 50px;
+		padding-top: 150px;
+		color: white;
+		font-size: 30pt;
+	}
+	.blurb-text {
+		width: 60%;
+		margin-top: 20px;
+		margin-left: 50px;
+		margin-right: auto;
+		color: white;
+		font-size: 14pt;
+	}
+	
+	.img-align {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.txt-align {
+		text-align: left;
+	}
+	.section-style-mission {
+		margin-left: auto;
+		margin-right: auto;
+		font-family:"Verdana", Arial, sans-serif;
+		padding: 10px;
+		width: 100%;
+	}
+	.txt-width-mission {
+		padding: 10px;
+		width: 100%;
+	}
+}
+
 /***********
  End Owner: Andrea Reid
  ************/
@@ -302,36 +324,7 @@ Date: November 22, 2020
  End Owner: Kristine Luangkhot
  ************/
 
- /***********
-Owner: Andrea Reid
-Date: Nov 23, 2020
-***********/
-/* Adjust formatting for phone view */
-/* Center image */
-@media screen and (max-width: 768px) {
-	.img-align {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.txt-align-resp {
-		text-align: left;
-	}
-	.section-style-mission {
-		margin-left: auto;
-		margin-right: auto;
-		font-family:"Verdana", Arial, sans-serif;
-		padding: 10px;
-		width: 100%;
-	}
-	.txt-width-mission {
-		padding: 10px;
-		width: 100%;
-	}
-}
-/***********
- End Owner: Andrea Reid
- ************/
+
 
 /**********
 	Owner: Kristine Luangkhot
@@ -355,4 +348,27 @@ Date: Nov 23, 2020
 
 /**********
 	End Owner: Kristine Luangkhot
+**********/
+
+/**********
+	Owner: Christopher Webb
+	Creation Date: December 1, 2020
+**********/
+
+.footer-style {
+	width: 100%;
+	height: 50px;
+	background-color: #543005;
+}
+
+.footer-text {
+	font-family:"Verdana", Arial, sans-serif;
+	color: white;
+	font-size: 12pt;
+}
+
+
+
+/**********
+	End Owner: Christopher Webb
 **********/
