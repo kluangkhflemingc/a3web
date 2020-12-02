@@ -79,7 +79,7 @@ Date: November 22, 2020
 }
 
 /* Active page is white and change inactive link color to white on hover */
-.navbar a.active, .navbar a:hover, .dropdown:hover .dropbutton, .dropdown-content a:hover {
+.navbar a.active, .navbar a:hover, .dropdown-content a:hover {
   color: white;
 }
 
@@ -115,8 +115,7 @@ Date: November 28, 2020
 	display: none;
 	position: absolute;
 	background-color: #8c510a;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	min-width: 180px;
 	z-index: 1;
 	top: 100%;
   }
@@ -127,11 +126,29 @@ Date: November 28, 2020
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
-	text-align: left;
   }
   .dropdown:hover .dropdown-content {
 	display: block;
   }
+
+/**********
+Owner: Kristine Luangkhot
+Creation Date: November 30, 2020
+**********/
+
+/* Create a slideshow of images where all images are positioned in the same place */
+ .photogallery{
+	position:relative;
+	}
+.photogallery img{
+	display:none;
+	position:relative;
+	top:0;
+	left:0;
+	}
+.photogallery img.activeimage{
+	display:block;
+	}
 /***********
 End Owner: Kristine Luangkhot
 ***********/
@@ -323,32 +340,6 @@ Date: November 22, 2020
  /***********
  End Owner: Kristine Luangkhot
  ************/
-
-
-
-/**********
-	Owner: Kristine Luangkhot
-	Creation Date: November 30, 2020
-**********/
-
-/* Create a slideshow of images where all images are positioned in the same place */
- .photogallery{
-	position:relative;
-	top: 100px;
-	}
-.photogallery img{
-	display:none;
-	position:absolute;
-	top:0;
-	left:0;
-	}
-.photogallery img.activeimage{
-	display:block;
-	}
-
-/**********
-	End Owner: Kristine Luangkhot
-**********/
 
 /**********
 	Owner: Christopher Webb
