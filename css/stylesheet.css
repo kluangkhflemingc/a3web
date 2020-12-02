@@ -157,10 +157,8 @@ Source: Parallax effect from https://www.w3schools.com/howto/howto_css_parallax.
 	height: 500px;
 }
 
-@media only screen and (min-width: 768px) {  
-
 .header-title {
-	width: 500px;
+	width: 60%;
 	margin-top: 0px;
 	margin-left: 50px;
 	padding-top: 150px;
@@ -168,29 +166,40 @@ Source: Parallax effect from https://www.w3schools.com/howto/howto_css_parallax.
 	font-size: 30pt;
 }
 .blurb-text {
-	width: 500px;
+	width: 60%;
 	margin-top: 20px;
 	margin-left: 50px;
+	margin-right: auto;
 	color: white;
 	font-size: 14pt;
 }
 
-/* apply style to alternating sections in page playout */
-.section-style-img {
+.txt-align {
+	text-align: left;
+}
+
+/* apply to sections with one column, like 'mission' section*/
+.section-style-1col {
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #f5f5f5;
+	padding: 10px;
 	width: 100%;
 }
 
-.section-style-mission {
-	margin-left: 16.67%;
-	margin-right: 16.67%;
-	padding: 30px;
-	text-align: center;
+/* apply style to sections with two columns, like 'Who we are' section */
+.section-style-2col {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f5f5f5;
 }
 
-.section-style-team {
+/* Set width to 100% so that it does not extend past section border at smaller screen size */
+.img-width {
+	width: 100%;
+}
+
+/* apply to sections with four columns, like 'Team' section */
+.section-style-4col {
 	padding-left: 20px;
 	text-align: center;
 }
@@ -209,50 +218,33 @@ img.circle {display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+@media only screen and (min-width: 768px) {  
+
+.header-title {
+	width: 500px;
+	margin-top: 0px;
+	margin-left: 50px;
+	padding-top: 150px;
+	color: white;
+	font-size: 30pt;
+}
+.blurb-text {
+	width: 500px;
+	margin-top: 20px;
+	margin-left: 50px;
+	color: white;
+	font-size: 14pt;
 }
 
-
-/* Adjust formatting for phone view */
-
-@media screen and (max-width: 768px) {
-
-	.header-title {
-		width: 60%;
-		margin-top: 0px;
-		margin-left: 50px;
-		padding-top: 150px;
-		color: white;
-		font-size: 30pt;
-	}
-	.blurb-text {
-		width: 60%;
-		margin-top: 20px;
-		margin-left: 50px;
-		margin-right: auto;
-		color: white;
-		font-size: 14pt;
-	}
-	
-	.img-align {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.txt-align {
-		text-align: left;
-	}
-	.section-style-mission {
-		margin-left: auto;
-		margin-right: auto;
-		font-family:"Verdana", Arial, sans-serif;
-		padding: 10px;
-		width: 100%;
-	}
-	.txt-width-mission {
-		padding: 10px;
-		width: 100%;
-	}
+.section-style-1col {
+	margin-left: 16.67%;
+	margin-right: 16.67%;
+	padding: 30px;
+	text-align: center;
 }
+}
+
 
 /***********
  End Owner: Andrea Reid
