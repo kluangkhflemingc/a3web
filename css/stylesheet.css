@@ -45,7 +45,8 @@ details > summary {
 
 
 .contactinfo {
-
+	text-align: left;
+	font-size: 11pt;
 }
 
 div.quadrant {
