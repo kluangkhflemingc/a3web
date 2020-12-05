@@ -33,17 +33,81 @@ Date: November 24, 2020
 	border-radius: 5px;
 }
 
-.teamtitle {
-	font-size: 0.75em;
+details {
 	margin: 0pt;
 	padding-top: 10pt;
 	padding-bottom: 10pt;
 }
 
-.teamblurb {
-	margin: 0pt;
-	padding-top: 10pt;
-	padding-bottom: 10pt;
+details > summary {
+	font-size: 0.75em;
+}
+
+
+.contactinfo {
+
+}
+
+div.quadrant {
+	position: relative;
+}
+
+.quadrant {
+	height: calc((100vh - 133px) / 2);
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	color: rgb(218, 202, 188);
+}
+
+#servicesremotesensing {
+	background-image: url("../images/remotesensingquadrant.jpg");
+}
+
+#servicestoolscripting {
+	background-image: url("../images/scriptingquadrant.JPG");
+	background-position: 0%;
+}
+
+#servicesspatialanalysis {
+	background-image: url("../images/spatialquadrant.JPG");
+	margin-top: 47px;
+}
+
+#servicescartography {
+	background-image: url("../images/cartographyquadrant.JPG");
+}
+
+div.quadrant > h1 {
+	background-color: rgba(128, 128, 128, 0.66);
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+div.quadrant > a {
+	display: block;
+	position: absolute;
+	top: 85%;
+	width: 40%;
+	margin: 0px 30%;
+	color: goldenrod;
+	font-size: 14pt;
+	background-color: rgba(128, 128, 128, 0.66);
+	text-decoration: none;
+}
+
+div.quadrant > a:link {
+	color: goldenrod;
+}
+
+div.quadrant > a:visited {
+	color: ivory;
+}
+
+div.quadrant > a:hover {
+	color: ivory;
+	background-color: rgba(207, 202, 197, 0.66);
 }
 /***********
 End Owner: Corwan Groux
@@ -322,6 +386,7 @@ Styles for small devices (phones and narrow tablets) */
 	.col-10 {width: 83.33%;}
 	.col-11 {width: 91.66%;}
 	.col-12 {width: 100%;}
+	#servicescartography {margin-top: 47px;}
 }
 /***********
 End Owner: Corwan Groux
