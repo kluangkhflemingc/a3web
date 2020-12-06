@@ -43,10 +43,21 @@ details > summary {
 	font-size: 0.75em;
 }
 
+#contactinfosection {
+	margin: 0;
+	padding-left: 16.67%;
+	padding-right: 16.67%;
+}
 
 .contactinfo {
-	text-align: left;
 	font-size: 11pt;
+}
+
+.googlemap {
+	width: 100%;
+	height: 100%;
+	max-width: 640px;
+	max-height: 432px;
 }
 
 div.quadrant {
@@ -54,12 +65,12 @@ div.quadrant {
 }
 
 .quadrant {
-	height: calc((100vh - 133px) / 2);
+	height: calc((100vh - 97px) / 2);
 	text-align: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50%;
-	color: rgb(218, 202, 188);
+	color: rgb(242, 242, 242);
 }
 
 #servicesremotesensing {
@@ -81,7 +92,7 @@ div.quadrant {
 }
 
 div.quadrant > h1 {
-	background-color: rgba(128, 128, 128, 0.66);
+	background-color: rgba(170, 129, 69, 0.70);
 	margin-left: 10%;
 	margin-right: 10%;
 }
@@ -92,23 +103,64 @@ div.quadrant > a {
 	top: 85%;
 	width: 40%;
 	margin: 0px 30%;
-	color: goldenrod;
+	color: rgb(242, 242, 242);
 	font-size: 14pt;
-	background-color: rgba(128, 128, 128, 0.66);
+	background-color: rgba(170, 129, 69, 0.70);
 	text-decoration: none;
 }
 
 div.quadrant > a:link {
-	color: goldenrod;
-}
-
-div.quadrant > a:visited {
-	color: ivory;
+	color: rgb(242, 242, 242);
 }
 
 div.quadrant > a:hover {
-	color: ivory;
 	background-color: rgba(207, 202, 197, 0.66);
+}
+
+.leftcol {
+	margin-left: 0%;
+}
+
+.rightcol {
+	margin-right: 0%;
+}
+
+/* The linear gradient was created with the help of this tutorial: https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/ */
+#scripting-header {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/circuitboard.jpg);
+	min-height: 300px;
+}
+
+.scriptingpics {
+	width: 100%;
+	max-width: 550px;
+	display: block;
+	margin: auto;
+}
+
+#whalemappingcode {
+	width: 100%;
+	max-width: 900px;
+	display: block;
+	margin: auto;
+}
+
+#whalemapping {
+	padding: 0px;
+	margin: auto;
+	height: 75vh;
+	overflow: auto;
+}
+
+#whalemappingbutton {
+	display: block;
+	background-color: rgb(78, 84, 90);
+	border: none;
+	border-radius: 5px;
+	margin: 1.5em auto;
+	padding: 0.5em;
+	font-size: 1em;
+	color: rgb(242, 242, 242)
 }
 /***********
 End Owner: Corwan Groux
@@ -393,6 +445,8 @@ Styles for small devices (phones and narrow tablets) */
 	.col-11 {width: 91.66%;}
 	.col-12 {width: 100%;}
 	#servicescartography {margin-top: 47px;}
+	.leftcol {margin-left: 8.34%;}
+	.rightcol {margin-right: 8.34%;}
 }
 /***********
 End Owner: Corwan Groux

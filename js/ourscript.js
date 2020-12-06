@@ -35,3 +35,27 @@ function swapImages(){
  /**********
  End Owner: Kristine Luangkhot
  **********/
+
+ /***********
+Owner: Corwan Groux
+Creation Date: December 5, 2020
+***********/
+
+/* I consulted W3Schools' article on conditionals https://www.w3schools.com/js/js_if_else.asp and changing image source https://www.w3schools.com/jsref/prop_img_src.asp to create this function.
+*/
+
+var clicked = 0;
+
+function runWhaleMapping(){
+  if (clicked == 0) {
+    document.getElementById("whalemappingcode").src = "images/scripting4output.jpg";
+    document.getElementById("whalemappingbutton").innerHTML = "Go back to the code.";
+    clicked = 1; }
+  else if (clicked == 1) {
+    document.getElementById("whalemappingcode").src = "images/scripting4whalemapping.jpg";
+    document.getElementById("whalemappingbutton").innerHTML = "'Run' the program!";
+    clicked = 0; }
+}
+ /**********
+ End Owner: Corwan Groux
+ **********/
