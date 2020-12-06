@@ -289,17 +289,9 @@ Creation Date: November 30, 2020
 	top:auto;
 	}
 
-/**********
-Owner: Kristine Luangkhot
-Creation Date: December 2, 2020
-**********/
-
-/* 4-column section style with a gray background */
-
-.section-style-4col-gray {
-	padding-left: 20px;
-	text-align: center;
-	background-color: #f5f5f5;
+.section-text {
+	margin-left: 2em;
+	margin-right: 2em;
 }
 
 /***********
@@ -381,7 +373,9 @@ Source: Parallax effect from https://www.w3schools.com/howto/howto_css_parallax.
 
 /* Align top margin of text in first column to top of image in second column */
 .top-align {
+	text-align: center;
 	margin-top: 0px;
+	font-size: 16pt;
 }
 
 /* Format Team photos as circles */
@@ -447,6 +441,7 @@ Styles for small devices (phones and narrow tablets) */
 	#servicescartography {margin-top: 47px;}
 	.leftcol {margin-left: 8.34%;}
 	.rightcol {margin-right: 8.34%;}
+	.section-title {margin-top: 25%;}
 }
 /***********
 End Owner: Corwan Groux
