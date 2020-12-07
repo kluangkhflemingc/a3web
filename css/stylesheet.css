@@ -498,6 +498,101 @@ img.circle {display: block;
 /***********
  End Owner: Andrea Reid
  ************/
+/**********
+	Owner: Christopher Webb
+	Creation Date: December 1, 2020
+**********/
+/** Footer at the bottom of the page formating the bar and text. **/
+
+.footer-style {
+	width: 100%;
+	height: 50px;
+	background-color: #543005;
+}
+
+.footer-text {
+	font-family:"Verdana", Arial, sans-serif;
+	color: white;
+	font-size: 12pt;
+	padding-left: 25px;
+	margin-top: 0px;
+}
+
+/* css for the image click through. I found help with this from the source
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb */
+.container{
+	width: 80%;
+	margin: 10%;
+}
+
+.col-left {
+    position: static;
+	float: left;
+	width: 25%;
+}
+
+.col-test {
+    position: static;
+	float: right;
+	width: 75%;
+}
+
+.col-rightside{
+	position: static;
+	float: right;
+	width: 45%;
+}
+
+nav > button {
+	padding: 15px 32px;
+	text-align: left;	
+	border: none;
+	font-size: 12pt;
+	background-color: lightgrey
+}
+
+button:hover {
+	color: grey;
+}
+
+nav.sidebar {
+	height: 100%;
+	width: 100%;
+	background-color: lightgray;
+	
+}
+/** This was used from the visual light spectrum image as it needed some specific css**/
+#visualLight {
+	width: 50%;
+	max-width: 800px;
+	vertical-align: top;
+	display: inline-block;
+	padding-bottom: 50px;
+
+}
+
+/** Back to top button. Resources used: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+This button when click will shift the screen back to the top of the page. **/
+#scollbtn {
+  position: sticky; /* sticky position because scroll was iffy*/
+  float: right;
+  bottom: 30px; 
+  right: 30px; 
+  background-color: #543005; 
+  color: white; 
+  cursor: pointer; 
+  border-radius: 5px; 
+  font-size: 18px; 
+  margin-top: 8px;
+}
+
+#scollbtn:hover {
+  background-color: #555;
+}
+
+/**********
+	End Owner: Christopher Webb
+**********/
 
 /***********
 Owner: Corwan Groux
@@ -518,6 +613,7 @@ Styles for small devices (phones and narrow tablets) */
 	.col-10 {width: 83.33%;}
 	.col-11 {width: 91.66%;}
 	.col-12 {width: 100%;}
+	nav.sidebar {height: 430px;}
 	#servicescartography {margin-top: 47px;}
 	.leftcol {
 		width: 50%;
@@ -601,99 +697,3 @@ Date: November 22, 2020
  End Owner: Kristine Luangkhot
  ************/
 
-/**********
-	Owner: Christopher Webb
-	Creation Date: December 1, 2020
-**********/
-/** Footer at the bottom of the page formating the bar and text. **/
-
-.footer-style {
-	width: 100%;
-	height: 50px;
-	background-color: #543005;
-}
-
-.footer-text {
-	font-family:"Verdana", Arial, sans-serif;
-	color: white;
-	font-size: 12pt;
-	padding-left: 25px;
-	margin-top: 0px;
-}
-
-/* css for the image click through. I found help with this from the source
-https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb */
-.container{
-	width: 80%;
-	margin: 10%;
-}
-
-.col-left {
-    position: static;
-	float: left;
-	width: 25%;
-}
-
-.col-test {
-    position: static;
-	float: right;
-	width: 75%;
-}
-
-.col-rightside{
-	position: static;
-	float: right;
-	width: 45%;
-}
-
-nav > button {
-	float: left;
-	padding: 15px 32px;
-	text-align: left;	
-	border: none;
-	font-size: 12pt;
-	background-color: lightgrey
-}
-
-button:hover {
-	color: grey;
-}
-
-nav.sidebar {
-	height: 425px;
-	width: 250px;
-	background-color: lightgray;
-	
-}
-/** This was used from the visual light spectrum image as it needed some specific css**/
-#visualLight {
-	width: 50%;
-	max-width: 800px;
-	vertical-align: top;
-	display: inline-block;
-	padding-bottom: 50px;
-
-}
-
-/** Back to top button. Resources used: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-This button when click will shift the screen back to the top of the page. **/
-#scollbtn {
-  position: sticky; /* sticky position because scroll was iffy*/
-  float: right;
-  bottom: 30px; 
-  right: 30px; 
-  background-color: #543005; 
-  color: white; 
-  cursor: pointer; 
-  border-radius: 5px; 
-  font-size: 18px; 
-  margin-top: 8px;
-}
-
-#scollbtn:hover {
-  background-color: #555;
-}
-
-/**********
-	End Owner: Christopher Webb
-**********/
