@@ -339,6 +339,15 @@ Creation Date: November 30, 2020
 	padding-left: 50px;
 	display: block;
 }
+
+.mainline a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.mainline a:hover {
+	text-decoration: underline;
+}
 /***********
 End Owner: Kristine Luangkhot
 ***********/
