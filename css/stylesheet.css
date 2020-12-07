@@ -315,11 +315,13 @@ Creation Date: November 30, 2020
 	font-size: 30pt;
 }
 
+/* Background image available at https://commons.wikimedia.org/wiki/File:Washington_topographic_map-fr.svg#file */
 #cartography-header {
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/cartography/washington_topographic_map.png);
 	min-height: 400px;
 }
 
+/* Background image available at https://pixabay.com/photos/space-universe-satellite-2302571/ */
 #remotesensing-header {
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/remotesensing-header.jpg);
 	min-height: 400px;
