@@ -134,7 +134,7 @@ div.quadrant > a:hover {
 /* The linear gradient was created with the help of this tutorial: https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/ */
 #scripting-header {
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/circuitboard.jpg);
-	min-height: 300px;
+	min-height: 400px;
 }
 
 div#scripting-header > p {
@@ -308,17 +308,43 @@ Creation Date: November 30, 2020
 	margin-right: 2em;
 }
 
+.page-title {
+	text-align: center;
+	padding-top: 170px;
+	color: white;
+	font-size: 30pt;
+}
+
+#cartography-header {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/cartography/washington_topographic_map.png);
+	min-height: 400px;
+}
+
+#remotesensing-header {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/remotesensing-header.jpg);
+	min-height: 400px;
+}
+
+.mainline {
+	height:1px; 
+	background: rgb(78, 84, 90);
+	width: 100%;
+	text-align: left;
+	margin-bottom: 3em;
+	padding-left: 50px;
+	display: block;
+}
 /***********
 End Owner: Kristine Luangkhot
 ***********/
 
 /***********
 Owner: Andrea Reid
-Date: Nov 23, 2020
+Date: Nov 23, 2020 - Dec 6, 2020
 Source: Parallax effect from https://www.w3schools.com/howto/howto_css_parallax.asp
 ***********/
-/* Apply style to header section with background image and text */
 
+/* Apply style to header section with background image and text */
 .main-header {
 	background-image: url("../images/satellite-placeholder.jpg");
 	min-height: 500px;
@@ -328,9 +354,21 @@ Source: Parallax effect from https://www.w3schools.com/howto/howto_css_parallax.
 	background-size: cover;
 }
 
+/* Source for gradient from https://www.w3schools.com/css/css3_gradients.asp*/
+#sa-header {
+	background-image: url("../images/WorlHillsideBasemap_Calanda.png");
+	min-height: 400px;
+}
+
 .header-overlay {
 	color: white;
 	height: 500px;
+}
+
+/*Source for gradient from https://www.w3schools.com/css/css3_gradients.asp*/
+.header-overlay-gradient {
+	background-image: linear-gradient(45deg, black, transparent);
+    opacity: 0.90;
 }
 
 .header-title {
@@ -370,12 +408,11 @@ Source: Parallax effect from https://www.w3schools.com/howto/howto_css_parallax.
 
 /* apply to sections with four columns, like 'Team' section */
 .section-style-4col {
-	padding-left: 20px;
+	padding: 20px;
 	text-align: center;
 }
 
 /* Allows flexibility in changing the background colour to grey for each section */
-
 .background-grey {
 	background-color: #f5f5f5;
 }
@@ -392,7 +429,7 @@ Source: Parallax effect from https://www.w3schools.com/howto/howto_css_parallax.
 	font-size: 16pt;
 }
 
-/* Format Team photos as circles */
+/* Format photos as circles */
 img.circle {display: block;
 	border-radius: 50%;
 	max-width:100%;
@@ -539,6 +576,7 @@ Date: November 22, 2020
 	Owner: Christopher Webb
 	Creation Date: December 1, 2020
 **********/
+/** Footer at the bottom of the page formating the bar and text. **/
 
 .footer-style {
 	width: 100%;
@@ -552,7 +590,77 @@ Date: November 22, 2020
 	font-size: 12pt;
 }
 
+/* css for the image click through. I found help with this from the source
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb */
+.container{
+	width: 80%;
+	margin: 10%;
+}
 
+.col-left {
+    position: static;
+	float: left;
+	width: 25%;
+}
+
+.col-test {
+    position: static;
+	float: right;
+	width: 75%;
+}
+
+.col-rightside{
+	position: static;
+	float: right;
+	width: 45%;
+}
+
+nav, button {
+	float: left;
+	padding: 15px 32px;
+	text-align: left;	
+	border: none;
+	font-size: 12pt;
+	background-color: lightgrey
+}
+
+button:hover {
+	color: grey;
+}
+
+nav.sidebar {
+	height: 425px;
+	width: 250px;
+	background-color: lightgray;
+	
+}
+/** This was used from the visual light spectrum image as it needed some specific css**/
+#visualLight {
+	width: 50%;
+	max-width: 800px;
+	vertical-align: top;
+	display: inline-block;
+	padding-bottom: 50px;
+
+}
+
+/** Back to top button. Resources used: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+This button when click will shift the screen back to the top of the page. **/
+#scollbtn {
+  position: sticky; /* sticky position because scroll was iffy*/
+  float: right;
+  bottom: 18px; 
+  right: 15px; 
+  background-color: #543005; 
+  color: white; 
+  cursor: pointer; 
+  border-radius: 40px; 
+  font-size: 18px; 
+}
+
+#scollbtn:hover {
+  background-color: #555;
+}
 
 /**********
 	End Owner: Christopher Webb
