@@ -423,6 +423,16 @@ img.circle {display: block;
 	margin-bottom:30px;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 15px;
+}
+
+/* Format buttons on Spatial Analysis page*/
+.sa-button-style {
+    padding: 15px;
+    background-color: #4CAF50;
+    text-align: center;
+    color: white;
+    float: none;
 }
 
 @media only screen and (min-width: 768px) {  
