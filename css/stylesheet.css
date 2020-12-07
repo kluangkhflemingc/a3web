@@ -135,9 +135,12 @@ div.quadrant > a:hover {
 #scripting-header {
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/circuitboard.jpg);
 	min-height: 400px;
+	position: relative;
 }
 
 div#scripting-header > p {
+	position: absolute;
+	top: 370px;
 	margin-left: calc(100% - 260px);
 	text-align: right;
 	font-size: 10pt;

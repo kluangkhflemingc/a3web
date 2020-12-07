@@ -48,11 +48,11 @@ var clicked = 0;
 
 function runWhaleMapping(){
   if (clicked == 0) {
-    document.getElementById("whalemappingcode").src = "images/scripting4output.jpg";
+    document.getElementById("whalemappingcode").src = "images/scripting4output.JPG";
     document.getElementById("whalemappingbutton").innerHTML = "Go back to the code.";
     clicked = 1; }
   else if (clicked == 1) {
-    document.getElementById("whalemappingcode").src = "images/scripting4whalemapping.jpg";
+    document.getElementById("whalemappingcode").src = "images/scripting4whalemapping.JPG";
     document.getElementById("whalemappingbutton").innerHTML = "'Run' the program!";
     clicked = 0; }
 }
