@@ -443,6 +443,11 @@ Source: Parallax effect from https://www.w3schools.com/howto/howto_css_parallax.
 	font-size: 16pt;
 }
 
+.credits {
+	font-size: 8pt;
+    font-style: italic;
+}
+
 /* Format photos as circles */
 img.circle {display: block;
 	border-radius: 50%;
