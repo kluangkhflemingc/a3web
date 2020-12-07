@@ -32,29 +32,73 @@
         </div>
     </header>
 <!-- End Owner: Kristine Luangkhot -->
-<!-- Owner: Andrea Reid
+<!-- Owner: Christopher Webb
          Creation Date: November 22, 2020-->
          <section class="col-12 outer-margin">
             <div class="main-header">
-                    <h1 class="page-title">Remote Sensing Page</h1>
+                <div class ="header-overlay">
+                    <h1 class="header-title">Remote Sensing Page</h1>
                     <p class="blurb-text">Below is a series of projects completed by our company.</p>
+                </div>
             </div>
         </section>
         <section class="col-12">
             <div class="col-8 section-style-1col">
-                <h2>Mission Statement</h2>
-                <p>Words words words words words. Words words words words wordsWords words words words wordsWords words words words wordsWords words words words wordsWords words words words wordsWords words words words wordsWords words words words wordsWords words words words wordsWords words words words wordsWords words words words wordsWords words words words words</p>
+                <h2>The Joys of Spectral Imargy</h2>
+                <p> Remote Sensing allows us to detected objests from afar. Helpful for observing areas that many be out of reach. </p>
             </div>
         </section>
         <section class="col-12 section-style-2col background-grey">
             <div class="col-6">
-                <h3 class="top-align">Project</h3>
-                <p>Words words words words words.</p>
+                <h3 class="top-align">An Imaregy Analysis Tool For Any Job </h3>
+                <p> With Spectral imagery there is nothing that can't be analyzed. With use of orbital satellites, we have the ability to detect 
+                    objects that are naked to the human eye, things such as soil moisture content, crop and forest health, the detection of acient ruins
+                and many, many more. </p>
             </div>
             <div class="col-6">
-                <img src="images/placeholder.JPG" alt="placeholder" class = "img-width">
+                <img src="images/Imagerybands.jpg" alt="display of imagery bands" class = "img-width">
             </div>
         </section>
-        <!-- End Owner: Andrea Reid -->
+        <section class="col-12 section-style-2col background-grey">
+            <div class="col-12 outer-margin">
+                <h3 class="top-align">Different imargy analysis</h3>
+            </div>   
+            <div class="col-12 outer-margin">
+                <p class="col-rightside"> From the Visible light spectrum we see everyday, and the rays on either side, it allows us to monitor 
+                    global environmental health. The different frequency require different imagery bands to be observe, but once collect can 
+                be used together to show a unique display that can show detailed information. </p>
+                <img src="images/visualLight.JPG" alt="Light Spectrum Bar" class = "img-width" id="visualLight">
+            </div>
+   
+            <!--Test the clilck press thingy -->
+            <div class="container" >
+                <h3 class="top-align">Image Gallery</h3>
+                <div class="col-left">
+                    <nav class="sidebar">
+                        <button type="button" onclick="document.getElementById('myImage').src='images/Imagerybands.jpg'">Spectral Imagery</button><br>
+                        <button type="button" onclick="document.getElementById('myImage').src='images/TrueColour.jpg'">True Colour Imagery</button><br>
+                        <button type="button" onclick="document.getElementById('myImage').src='images/FalseColour.jpg'">False Colour Imagery</button><br>
+                        <button type="button" onclick="document.getElementById('myImage').src='images/SWIR.jpg'">Short Wave Infrared Imagery</button><br>
+                        <button type="button" onclick="document.getElementById('myImage').src='images/LandClass.jpg'">Calculating Land Class</button> 
+                    </nav>
+                </div>
+                
+                <div class="col-test">
+                    <img id="myImage" alt="Image" src="images\Imagerybands.jpg" style="width:100%;height:430px"> 
+                </div>
+            </div>    
+        </section>
+        <!-- End Owner: Christopher Webb -->
 
+
+
+
+<!-- Owner: Christopher Webb -->
+<footer class="col-12 outer-margin">
+    <div class="footer-style">
+    <p class="footer-text">(c) Our Name, Fleming College, 2020</p>
+    </div>
+</footer>
+<!-- End Owner: Christopher Webb -->
 </body>
+</html>
