@@ -306,6 +306,20 @@ Creation Date: November 30, 2020
 	min-height: 400px;
 }
 
+#remotesensing-header {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/remotesensing-header.jpg);
+	min-height: 400px;
+}
+
+.mainline {
+	height:1px; 
+	background: rgb(78, 84, 90);
+	width: 100%;
+	text-align: left;
+	margin-bottom: 3em;
+	padding-left: 50px;
+	display: block;
+}
 /***********
 End Owner: Kristine Luangkhot
 ***********/
