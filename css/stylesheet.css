@@ -22,6 +22,7 @@ Date: November 24, 2020
   width: 100%;
 }
 
+/* CSS for the About US section on the index page */
 .teamodd {
 	background-color: #f5f5f5;
 }
@@ -43,6 +44,8 @@ details > summary {
 	font-size: 0.75em;
 }
 
+
+/* CSS for the Contact Info section */
 #contactinfosection {
 	margin: 0;
 	padding-left: 16.67%;
@@ -60,12 +63,12 @@ details > summary {
 	max-height: 432px;
 }
 
-div.quadrant {
-	position: relative;
-}
+/* CSS for the Services & Projects page */
 
+/* I learned about the CSS calc() function through a StackExchange discussion https://stackoverflow.com/questions/27256849/is-it-possible-to-use-vh-minus-pixels-in-a-css-calc, and also consulted Mozilla's developer article about it https://developer.mozilla.org/en-US/docs/Web/CSS/calc() */
 .quadrant {
-	height: calc((100vh - 97px) / 2);
+	position: relative;
+	height: calc((100vh - 97px) / 2); /* Sets the height to 50% of the viewport height minus the height of the header and footer elements */
 	text-align: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -109,14 +112,11 @@ div.quadrant > a {
 	text-decoration: none;
 }
 
-div.quadrant > a:link {
-	color: rgb(242, 242, 242);
-}
-
 div.quadrant > a:hover {
 	background-color: rgba(207, 202, 197, 0.66);
 }
 
+/* CSS for the Scripting page */
 .leftcol {
 	margin-left: 0%;
 	text-align: center;
@@ -128,7 +128,7 @@ div.quadrant > a:hover {
 }
 
 .coltext {
-	margin-top: 0%
+	margin-top: 0%;
 }
 
 /* The linear gradient was created with the help of this tutorial: https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/ */
@@ -177,7 +177,7 @@ div#scripting-header > p {
 	margin: 1.5em auto;
 	padding: 0.5em;
 	font-size: 1em;
-	color: rgb(242, 242, 242)
+	color: rgb(242, 242, 242);
 }
 /***********
 End Owner: Corwan Groux
