@@ -514,16 +514,13 @@ img.circle {display: block;
 	font-family:"Verdana", Arial, sans-serif;
 	color: white;
 	font-size: 12pt;
-	padding-left: 25px;
-	margin-top: 0px;
+	padding-left: 10px;
+	padding-top: 15px;
+	margin: 0px;
 }
 
 /* css for the image click through. I found help with this from the source
 https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb */
-.container{
-	width: 80%;
-	margin: 10%;
-}
 
 .col-left {
     position: static;
@@ -535,12 +532,6 @@ https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb */
     position: static;
 	float: right;
 	width: 75%;
-}
-
-.col-rightside{
-	position: static;
-	float: right;
-	width: 45%;
 }
 
 nav > button {
@@ -563,12 +554,16 @@ nav.sidebar {
 }
 /** This was used from the visual light spectrum image as it needed some specific css**/
 #visualLight {
-	width: 50%;
 	max-width: 800px;
 	vertical-align: top;
 	display: inline-block;
-	padding-bottom: 50px;
+}
 
+/** Chaning the main image on the careers page**/
+
+#careers-header {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/Lookout.jpg);
+	min-height: 400px;
 }
 
 /** Back to top button. Resources used: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
