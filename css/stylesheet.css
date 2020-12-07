@@ -128,7 +128,7 @@ div.quadrant > a:hover {
 /* The linear gradient was created with the help of this tutorial: https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/ */
 #scripting-header {
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/circuitboard.jpg);
-	min-height: 300px;
+	min-height: 400px;
 }
 
 .scriptingpics {
