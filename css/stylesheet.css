@@ -542,6 +542,7 @@ Date: November 22, 2020
 	font-family:"Verdana", Arial, sans-serif;
 	color: white;
 	font-size: 12pt;
+	padding-top: 10px;
 }
 
 /* css for the image click through. I found help with this from the source
@@ -569,7 +570,7 @@ https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb */
 	width: 45%;
 }
 
-nav, button {
+nav > button {
 	float: left;
 	padding: 15px 32px;
 	text-align: left;	
@@ -603,13 +604,14 @@ This button when click will shift the screen back to the top of the page. **/
 #scollbtn {
   position: sticky; /* sticky position because scroll was iffy*/
   float: right;
-  bottom: 18px; 
-  right: 15px; 
+  bottom: 30px; 
+  right: 30px; 
   background-color: #543005; 
   color: white; 
   cursor: pointer; 
-  border-radius: 40px; 
+  border-radius: 5px; 
   font-size: 18px; 
+  margin-top: 8px;
 }
 
 #scollbtn:hover {
