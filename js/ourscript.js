@@ -82,3 +82,19 @@ function changeHabImage() {
  /**********
  End Owner: Andrea Reid
  **********/
+ /***** 
+  Owner: Christopher Webb
+  December 7th 2020
+  The reference material used to learn about the required java script was 
+  https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+  *****/
+ mybutton = document.getElementById("scollbtn");
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.documentElement.scrollTop = 0; 
+}
+
+/****
+ End Owner: Christopher Webb
+ */
