@@ -33,7 +33,8 @@
         </header>
     <!-- End Owner: Kristine Luangkhot -->
     <!-- Owner: Andrea Reid
-         Creation Date: December 5, 2020-->
+         Creation Date: December 5 - 7, 2020
+         Source for button styles: https://www.w3schools.com/w3css/w3css_buttons.asp-->
     <section class="col-12 outer-margin">
         <div id="sa-header" class="main-header header-overlay-gradient">
                 <h1 class="page-title">Spatial Analysis</h1>
@@ -51,40 +52,40 @@
             <p>We have experience working with government, industry, and other stakeholders to develop risk assessment frameworks. Through the development of such frameworks, we have been able to help mitigate major threats, such as pipe breaks, by using GIS tools to assess vulnerable areas and other risk factors, such as the resilience of a system and the potential consequences if a threat event were to occur. </p>
         </div>
         <div class="col-6">
-            <img src="images/digitisation900x900.jpg" alt="Digitization" class = "img-width">
+            <img src="images/WhoWeAre.jpg" alt="Digitization" class = "img-width">
         </div>
     </section>
     <section class="col-12 section-style-2col">
         <div class="col-6">
-            <img src="images/SnailHab900x900.jpg" alt="Snail Habitat" class = "img-width">
+            <img src="images/SnailHabLandscape.jpg" alt="Snail Habitat" class = "img-width">
         </div>
         <div class="col-6">
             <h3 class="top-align">Site Suitability</h3>
             <p>Selecting areas that are appropriate for a specific function is something that we have a lot of experience in. Our past projects include habitat selection for snails using a selection of tools (e.g., overlay analysis, buffer creation, and creatin geoprocessing work flows in model builder). The results of our analyses are far reaching and relevant for implementation at the policy level for </p>
         </div>
     </section>
-    <section class="col-12 section-style-4col">
+    <section class="col-12 section-style-4col background-grey">
         <div>
             <h3>A Sample of Spatial Analysis Techniques</h3>
         </div>
         <div class="col-3">
-            <h4 class="teamnames">Digitization</h4>
-            <img src="images/digitisation900x900.jpg" alt="Digitization" class="circle">
+            <button onclick="changeDigiImage()" class="sa-button-style">Digitization</button>
+            <img id="myimage_digi" src="images/digitisation_before_crop.jpg" alt="Digitization" class="circle">
         </div>
         <div class="col-3">
-            <h4 class="teamnames">Buffer Creation</h4>
-            <img src="images/Buffer900x900.jpg" alt="Road Buffer" class="circle">
+            <button onclick="changeBuffImage()" class="sa-button-style">Buffer Creation</button>
+            <img id="myimage_buffer" src="images/Buffer_Before_crop.jpg" alt="Road Buffer" class="circle">
         </div>
         <div class="col-3">
-            <h4 class="teamnames">Model Builder</h4>           
-            <img src="images/modelbuilder900x900.jpg" alt="Model Builder" class="circle">
+            <button onclick="changeModelImage()" class="sa-button-style">Model Builder</button>           
+            <img id="myimage_modelbuilder" src="images/modelbuilder_before.jpg" alt="Model Builder" class="circle">
         </div>
         <div class="col-3">
-            <h4 class="teamnames">Overlay Analysis</h4>           
-            <img src="images/SnailHab900x900.jpg" alt="Snail Habitat" class="circle">
+            <button onclick="changeHabImage()" class="sa-button-style">Overlay Analysis</button>           
+            <img id="myimage_snailhab" src="images/SnailHab_Before_crop.jpg" alt="Snail Habitat" class="circle">
         </div>
     </section>
-    <!-- End Owner: Andrea Reid -->
+<!-- End Owner: Andrea Reid -->
 <!-- Owner: Christopher Webb -->
 <footer class="col-12 outer-margin">
     <div class="footer-style">

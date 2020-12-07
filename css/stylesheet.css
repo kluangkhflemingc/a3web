@@ -119,16 +119,33 @@ div.quadrant > a:hover {
 
 .leftcol {
 	margin-left: 0%;
+	text-align: center;
 }
 
 .rightcol {
 	margin-right: 0%;
+	text-align: center;
+}
+
+.coltext {
+	margin-top: 0%
 }
 
 /* The linear gradient was created with the help of this tutorial: https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/ */
 #scripting-header {
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/circuitboard.jpg);
 	min-height: 400px;
+	position: relative;
+}
+
+div#scripting-header > p {
+	position: absolute;
+	top: 370px;
+	margin-left: calc(100% - 260px);
+	text-align: right;
+	font-size: 10pt;
+	color: rgb(242, 242, 242);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .scriptingpics {
@@ -146,10 +163,10 @@ div.quadrant > a:hover {
 }
 
 #whalemapping {
-	padding: 0px;
 	margin: auto;
 	height: 75vh;
 	overflow: auto;
+	text-align: center;
 }
 
 #whalemappingbutton {
@@ -301,11 +318,13 @@ Creation Date: November 30, 2020
 	font-size: 30pt;
 }
 
+/* Background image available at https://commons.wikimedia.org/wiki/File:Washington_topographic_map-fr.svg#file */
 #cartography-header {
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/cartography/washington_topographic_map.png);
 	min-height: 400px;
 }
 
+/* Background image available at https://pixabay.com/photos/space-universe-satellite-2302571/ */
 #remotesensing-header {
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/remotesensing-header.jpg);
 	min-height: 400px;
@@ -319,6 +338,15 @@ Creation Date: November 30, 2020
 	margin-bottom: 3em;
 	padding-left: 50px;
 	display: block;
+}
+
+.mainline a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.mainline a:hover {
+	text-decoration: underline;
 }
 /***********
 End Owner: Kristine Luangkhot
@@ -423,6 +451,16 @@ img.circle {display: block;
 	margin-bottom:30px;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 15px;
+}
+
+/* Format buttons on Spatial Analysis page*/
+.sa-button-style {
+    padding: 15px;
+    background-color: #4CAF50;
+    text-align: center;
+    color: white;
+    float: none;
 }
 
 @media only screen and (min-width: 768px) {  
@@ -476,10 +514,42 @@ Styles for small devices (phones and narrow tablets) */
 	.col-11 {width: 91.66%;}
 	.col-12 {width: 100%;}
 	#servicescartography {margin-top: 47px;}
-	.leftcol {margin-left: 8.34%;}
-	.rightcol {margin-right: 8.34%;}
+	.leftcol {
+		width: 50%;
+		text-align: left;
+	}
+	.rightcol {
+		width: 50%;
+		text-align: left;
+	}
 	.section-title {margin-top: 25%;}
+	.scriptingpics {margin: 0%;}
 }
+
+@media only screen and (min-width: 1080px) {
+	.leftcol {
+		margin-left: 8.34%;
+		width: 41.66%;
+		text-align: left;
+	}
+	.rightcol {
+		margin-right: 8.34%;
+		width: 41.66%;
+		text-align: left;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	.leftcol {
+		margin-left: 12.5%;
+		width: 37.5%;
+	}
+	.rightcol {
+		margin-right: 12.5%;
+		width: 37.5%;
+	}
+}
+
 /***********
 End Owner: Corwan Groux
 ***********/
