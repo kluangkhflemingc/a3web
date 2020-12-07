@@ -119,16 +119,30 @@ div.quadrant > a:hover {
 
 .leftcol {
 	margin-left: 0%;
+	text-align: center;
 }
 
 .rightcol {
 	margin-right: 0%;
+	text-align: center;
+}
+
+.coltext {
+	margin-top: 0%
 }
 
 /* The linear gradient was created with the help of this tutorial: https://webdevetc.com/blog/how-to-add-a-gradient-overlay-to-a-background-image-using-just-css-and-html/ */
 #scripting-header {
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/circuitboard.jpg);
 	min-height: 300px;
+}
+
+div#scripting-header > p {
+	margin-left: calc(100% - 260px);
+	text-align: right;
+	font-size: 10pt;
+	color: rgb(242, 242, 242);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .scriptingpics {
@@ -146,10 +160,10 @@ div.quadrant > a:hover {
 }
 
 #whalemapping {
-	padding: 0px;
 	margin: auto;
 	height: 75vh;
 	overflow: auto;
+	text-align: center;
 }
 
 #whalemappingbutton {
@@ -439,10 +453,42 @@ Styles for small devices (phones and narrow tablets) */
 	.col-11 {width: 91.66%;}
 	.col-12 {width: 100%;}
 	#servicescartography {margin-top: 47px;}
-	.leftcol {margin-left: 8.34%;}
-	.rightcol {margin-right: 8.34%;}
+	.leftcol {
+		width: 50%;
+		text-align: left;
+	}
+	.rightcol {
+		width: 50%;
+		text-align: left;
+	}
 	.section-title {margin-top: 25%;}
+	.scriptingpics {margin: 0%;}
 }
+
+@media only screen and (min-width: 1080px) {
+	.leftcol {
+		margin-left: 8.34%;
+		width: 41.66%;
+		text-align: left;
+	}
+	.rightcol {
+		margin-right: 8.34%;
+		width: 41.66%;
+		text-align: left;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	.leftcol {
+		margin-left: 12.5%;
+		width: 37.5%;
+	}
+	.rightcol {
+		margin-right: 12.5%;
+		width: 37.5%;
+	}
+}
+
 /***********
 End Owner: Corwan Groux
 ***********/
