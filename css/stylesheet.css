@@ -294,6 +294,18 @@ Creation Date: November 30, 2020
 	margin-right: 2em;
 }
 
+.page-title {
+	text-align: center;
+	padding-top: 170px;
+	color: white;
+	font-size: 30pt;
+}
+
+#cartography-header {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/cartography/washington_topographic_map.png);
+	min-height: 400px;
+}
+
 /***********
 End Owner: Kristine Luangkhot
 ***********/
