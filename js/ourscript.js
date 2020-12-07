@@ -59,6 +59,29 @@ function runWhaleMapping(){
  /**********
  End Owner: Corwan Groux
  **********/
+
+/***********
+Owner: Andrea Reid
+Creation Date: December 7, 2020
+Source: https://www.w3schools.com/jsref/event_onclick.asp and https://www.w3schools.com/jsref/prop_img_src.asp
+***********/
+
+function changeDigiImage() {
+  document.getElementById('myimage_digi').src = "images/digitisation_after_crop.jpg";
+}
+function changeBuffImage() {
+  document.getElementById('myimage_buffer').src = "images/Buffer_After_crop.jpg";
+}
+function changeModelImage() {
+  document.getElementById('myimage_modelbuilder').src = "images/modelbuilder_after.jpg";
+}
+function changeHabImage() {
+  document.getElementById('myimage_snailhab').src = "images/SnailHab_After_crop.jpg";
+}
+
+ /**********
+ End Owner: Andrea Reid
+ **********/
  /***** 
   Owner: Christopher Webb
   December 7th 2020
