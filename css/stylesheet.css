@@ -612,7 +612,8 @@ Date: November 22, 2020
 	font-family:"Verdana", Arial, sans-serif;
 	color: white;
 	font-size: 12pt;
-	padding-top: 10px;
+	padding-left: 25px;
+	margin-top: 0px;
 }
 
 /* css for the image click through. I found help with this from the source
