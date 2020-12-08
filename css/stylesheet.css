@@ -24,7 +24,7 @@ Date: November 24, 2020
 
 /* CSS for the About US section on the index page */
 .teamodd {
-	background-color: #f5f5f5;
+	background-color: #f5f5f5; /* Alternating backgrounds for the odd-numbered team members */
 }
 .teamnames {
 	text-align: center;
@@ -48,8 +48,6 @@ details > summary {
 /* CSS for the Contact Info section */
 #contactinfosection {
 	margin: 0;
-	padding-left: 16.67%;
-	padding-right: 16.67%;
 }
 
 .contactinfo {
@@ -68,7 +66,7 @@ details > summary {
 /* I learned about the CSS calc() function through a StackExchange discussion https://stackoverflow.com/questions/27256849/is-it-possible-to-use-vh-minus-pixels-in-a-css-calc, and also consulted Mozilla's developer article about it https://developer.mozilla.org/en-US/docs/Web/CSS/calc() */
 .quadrant {
 	position: relative;
-	height: calc((100vh - 97px) / 2); /* Sets the height to 50% of the viewport height minus the height of the header and footer elements */
+	height: calc((100vh - 97px) / 2); /* Sets the height to 50% of the viewport height minus the height of the header and footer elements so that the whole page is filled without creating a scroll bar*/
 	text-align: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -82,7 +80,7 @@ details > summary {
 
 #servicestoolscripting {
 	background-image: url("../images/scriptingquadrant.JPG");
-	background-position: 0%;
+	background-position: 0%; /* Because the code is left aligned, it makes sense to anchor the image on the left rather than the center */
 }
 
 #servicesspatialanalysis {
@@ -100,10 +98,11 @@ div.quadrant > h1 {
 	margin-right: 10%;
 }
 
+/* The technique to position an element within its parent container with absolute position comes from https://css-tricks.com/absolute-positioning-inside-relative-positioning/ */
 div.quadrant > a {
 	display: block;
 	position: absolute;
-	top: 85%;
+	top: 85%; /* Makes the placement of the link relative to the top of the div rather than the header above it for more consistent positioning across screen sizes */
 	width: 40%;
 	margin: 0px 30%;
 	color: rgb(242, 242, 242);
@@ -162,6 +161,7 @@ div#scripting-header > p {
 	margin: auto;
 }
 
+/* I learned to use overflow: auto to create a scrollable image from http://tutorial.wickham43.com/imageswithascrollbar.php */
 #whalemapping {
 	margin: auto;
 	height: 75vh;
@@ -594,7 +594,8 @@ Owner: Corwan Groux
 Date: November 24, 2020
 ***********/
 /* Taken from https://www.w3schools.com/css/css_rwd_mediaqueries.asp
-Styles for small devices (phones and narrow tablets) */
+Styles for small devices (phones and narrow tablets)
+All additional styles and the additional media queries are our own creation. */
 @media only screen and (min-width: 768px) {
 	.col-1 {width: 8.33%;}
 	.col-2 {width: 16.66%;}

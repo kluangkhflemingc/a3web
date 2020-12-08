@@ -44,8 +44,10 @@ Creation Date: December 5, 2020
 /* I consulted W3Schools' article on conditionals https://www.w3schools.com/js/js_if_else.asp and changing image source https://www.w3schools.com/jsref/prop_img_src.asp to create this function.
 */
 
+/* Global dummy variable to track whether the button was last clicked to 'run' to code or go back */
 var clicked = 0;
 
+/* Very simple function to simulate running the code by flipping between an image of the code and an image of code being run and the results */
 function runWhaleMapping(){
   if (clicked == 0) {
     document.getElementById("whalemappingcode").src = "images/scripting4output.JPG";
