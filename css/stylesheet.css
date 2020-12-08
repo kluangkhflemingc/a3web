@@ -93,7 +93,7 @@ details > summary {
 }
 
 div.quadrant > h1 {
-	background-color: rgba(170, 129, 69, 0.70);
+	background-color: rgba(124, 75, 1, 0.6);
 	margin-left: 10%;
 	margin-right: 10%;
 }
@@ -105,14 +105,15 @@ div.quadrant > a {
 	top: 85%; /* Makes the placement of the link relative to the top of the div rather than the header above it for more consistent positioning across screen sizes */
 	width: 40%;
 	margin: 0px 30%;
-	color: rgb(242, 242, 242);
+	color: rgb(255, 255, 255);
 	font-size: 14pt;
-	background-color: rgba(170, 129, 69, 0.70);
+	background-color: rgba(124, 75, 1, 0.6);
 	text-decoration: none;
 }
 
 div.quadrant > a:hover {
 	background-color: rgba(207, 202, 197, 0.66);
+	color: rgba(124, 75, 1)
 }
 
 /* CSS for the Scripting page */
