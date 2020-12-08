@@ -407,16 +407,6 @@ Source: Parallax effect from https://www.w3schools.com/howto/howto_css_parallax.
 	text-align: left;
 }
 
-/* apply to sections with one column, like 'mission' section*/
-.section-style-1col {
-	margin-left: auto;
-	margin-right: auto;
-	padding: 10px;
-	width: 100%;
-	text-align: center;
-
-}
-
 /* apply style to sections with two columns, like 'Who we are' section */
 .section-style-2col {
 	margin-left: auto;
@@ -470,34 +460,6 @@ img.circle {display: block;
     color: white;
     float: none;
 }
-
-@media only screen and (min-width: 768px) {  
-
-.header-title {
-	width: 500px;
-	margin-top: 0px;
-	margin-left: 50px;
-	padding-top: 150px;
-	color: white;
-	font-size: 30pt;
-}
-.blurb-text {
-	width: 500px;
-	margin-top: 20px;
-	margin-left: 50px;
-	color: white;
-	font-size: 14pt;
-}
-
-.section-style-1col {
-	margin-left: 16.67%;
-	margin-right: 16.67%;
-	padding: 30px;
-	text-align: center;
-}
-}
-
-
 /***********
  End Owner: Andrea Reid
  ************/
@@ -524,18 +486,6 @@ img.circle {display: block;
 
 /* css for the image click through. I found help with this from the source
 https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb */
-
-.col-left {
-    position: static;
-	float: left;
-	width: 25%;
-}
-
-.col-test {
-    position: static;
-	float: right;
-	width: 75%;
-}
 
 nav > button {
 	padding: 15px 32px;
@@ -571,7 +521,7 @@ nav.sidebar {
 
 /** Back to top button. Resources used: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 This button when click will shift the screen back to the top of the page. **/
-#scollbtn {
+#scrollbutton {
   position: sticky; /* sticky position because scroll was iffy*/
   float: right;
   bottom: 30px; 
@@ -584,7 +534,7 @@ This button when click will shift the screen back to the top of the page. **/
   margin-top: 12px;
 }
 
-#scollbtn:hover {
+#scrollbutton:hover {
   background-color: #555;
 }
 
@@ -625,6 +575,11 @@ All additional styles and the additional media queries are our own creation. */
 	}
 	.section-title {margin-top: 25%;}
 	.scriptingpics {margin: 0%;}
+	.section-style-1col {
+		margin-left: 16.67%;
+		margin-right: 16.67%;
+		text-align: center;
+	}
 }
 
 @media only screen and (min-width: 1080px) {
