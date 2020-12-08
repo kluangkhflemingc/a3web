@@ -412,6 +412,8 @@ Source: Parallax effect from https://www.w3schools.com/howto/howto_css_parallax.
 	margin-right: auto;
 	padding: 10px;
 	width: 100%;
+	text-align: center;
+
 }
 
 /* apply style to sections with two columns, like 'Who we are' section */
