@@ -330,6 +330,7 @@ Creation Date: November 30, 2020
 	min-height: 400px;
 }
 
+/* Create a line to visually separate lines of text */
 .mainline {
 	height:1px; 
 	background: rgb(78, 84, 90);
@@ -561,7 +562,7 @@ nav.sidebar {
 	display: inline-block;
 }
 
-/** Chaning the main image on the careers page**/
+/** Changing the main image on the careers page**/
 
 #careers-header {
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/Lookout.jpg);
@@ -611,6 +612,7 @@ Styles for small devices (phones and narrow tablets) */
 	.col-11 {width: 91.66%;}
 	.col-12 {width: 100%;}
 	nav.sidebar {height: 430px;}
+	#myImage {height: 430px;}
 	#servicescartography {margin-top: 47px;}
 	.leftcol {
 		width: 50%;
