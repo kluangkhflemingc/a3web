@@ -458,8 +458,13 @@ img.circle {display: block;
     background-color: #317333;
     text-align: center;
     color: white;
-    float: none;
+	float: none;
 }
+
+.sa-button-style:hover {
+	color: #d1f1d2;
+}
+
 /***********
  End Owner: Andrea Reid
  ************/
